@@ -1,0 +1,33 @@
+img {
+       text-align: center;
+       width:100px;
+       height: auto;
+       display: block;
+       margin-left: 28%;
+     }
+
+ .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding-top: 100px;
+    margin: auto;
+}
+.form-signin input[type="username"] {
+    margin-bottom: 5px;
+    border-radius: 1;
+    border-radius: 1;
+}
+.form-signin input[type="email"] {
+    margin-bottom: 5px;
+    border-radius: 1;
+    border-radius: 1;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-radius: 1;
+    border-radius: 1;
+}
+.btn-block {
+    display: block;
+    width: 50%;
+}

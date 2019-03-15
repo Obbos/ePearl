@@ -1,0 +1,81 @@
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+//back ground colors
+$PrimaryBgColor: #ededed;
+
+//fonts colors
+$primaryFontColor:#0654C0;
+$secondaryFontColor:#333333;
+
+//dimension of height
+$large-height:100px;
+$medium-height:50px;
+$small-height:30px;
+
+//dimension of width
+$small-width:230px;
+
+//Border Size
+$border-defaulty:1px solid #cdcfd3;
+$PrimaryBorder:1px solid #e2e0e0;
+
+
+//box shadow
+$primaryBorderShadow:2px 2px 2px 2px #cccccc;
+
+//text-padding
+$PrimaryNavTextPadding:50px;
+
+//media query medium
+@mixin media-m {
+                @media (max-width: 990.756px) { 
+                	.navbar {
+					           height: $medium-height;
+					           border:$border-defaulty;
+					           background: $PrimaryBgColor;
+					           border: none;
+					           box-shadow:$primaryBorderShadow;
+					           font-family: 'Abel', sans-serif;
+
+
+					        }
+
+                }
+               }
+
+//media query small
+@mixin media-s {
+                @media (max-width: 230.756px) { 
+                	.navbar {
+					           height: $medium-height;
+					           width: $small-width;
+					           border:$border-defaulty;
+					           background: $PrimaryBgColor;
+					           border: none;
+					           box-shadow:$primaryBorderShadow;
+					           font-family: 'Abel', sans-serif;
+
+
+					        }
+
+                }
+               }

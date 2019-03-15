@@ -1,0 +1,29 @@
+.navbar {
+           height: $small-height;
+           border:$border-defaulty;
+           background: $PrimaryBgColor;
+           border: none;
+           box-shadow:$primaryBorderShadow;
+           font-family: 'Abel', sans-serif;
+
+
+        }
+
+.nav-link {
+              .navupperfirst
+               {
+                color: $secondaryFontColor;
+                cursor: default;
+               }
+
+               .navupperlast 
+               {
+                color:$primaryFontColor;
+               }
+
+          }
+
+@include media-m;
+
+@include media-s;
+
