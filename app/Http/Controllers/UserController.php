@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function getSignin(){
 
-    	return view('auth.signin');
+    	return view('authe.signin');
     }
 
     public function postSignin(Request $request){
@@ -27,6 +27,6 @@ class UserController extends Controller
 
     	$user->save();
 
-    	return redirect()->route('auth.profile');
+    	return redirect()->route('authe.profile');
     }
 }

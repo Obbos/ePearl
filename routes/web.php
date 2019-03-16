@@ -23,18 +23,20 @@ Route::get('/', function () {
 //registration route
 Route::get('register', function()
 {
-    return view('auth.register');
+    return view('authe.register');
 });
 
-//sign route
+/*sign route
 Route::get('/signin',[
  'uses' => 'UserController@getSignin',
- 'as' => 'auth.signin'
+ 'as' => 'authe.signin'
 ]);
 
 //sign route
 Route::post('/signin',[
  'uses' => 'UserController@postSignin',
- 'as' => 'auth.signin'
+ 'as' => 'authe.signin'
 ]);
+*/
 
+Route::get('/signin', 'UserController@getSignin')->name('authe.signin');
