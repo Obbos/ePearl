@@ -9,10 +9,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'ePearl')</title>
+    <title>@yield('title')</title>
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!--icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css')}}">

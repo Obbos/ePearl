@@ -26,17 +26,14 @@ Route::get('register', function()
     return view('authe.register');
 });
 
-/*sign route
-Route::get('/signin',[
- 'uses' => 'UserController@getSignin',
- 'as' => 'authe.signin'
+//sign route
+Route::get('/register',[
+ 'uses' => 'UserController@getRegister',
+ 'as' => 'authe.register'
 ]);
 
 //sign route
-Route::post('/signin',[
- 'uses' => 'UserController@postSignin',
- 'as' => 'authe.signin'
+Route::post('/register',[
+ 'uses' => 'UserController@postRegister',
+ 'as' => 'authe.register'
 ]);
-*/
-
-Route::get('/signin', 'UserController@getSignin')->name('authe.signin');

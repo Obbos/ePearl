@@ -2,31 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\User;
 
-use App\Http\Requests;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function getSignin(){
-
-    	return view('authe.signin');
+    
+    public function getRegister()
+    {
+    	return view('authe.register');
     }
 
-    public function postSignin(Request $request){
-
-    	$this->validate($request,[
-         'email' => 'email|required|unique:users',
+    public function postRegister(Request $request)
+    {
+      $this->validate($request,[
+          
+          'name' => 'name|required|unique:user',
+          'email' => 'email|required|unique:user',
           'password' => 'required|min:4'
-    	]);
+      ]);
 
-    	$user = new User([
+      $user = new User([
+
+         'name' => $request->input('name'),
          'email' => $request->input('email'),
-         'password' => bcrpt($request->input('password'))
-    	]);
+         'password' => bcrypt($request->input('password'))
+      ]);
 
-    	$user->save();
+      $user->save();
 
-    	return redirect()->route('authe.profile');
+      return redirect()->route('partials.navigation');
     }
 }

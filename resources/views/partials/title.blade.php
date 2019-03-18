@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('title')
- {{ config('app.name', 'ePearl') }}
+ epearl
 @endsection
